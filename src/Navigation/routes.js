@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer, createDrawerNavigator, Drawer
 import Icon from 'react-native-vector-icons/Feather'
 
 import ComporLook from '../telas/comporLook'
+import EspacoTroca from '../telas/espacoTroca'
 import Looks from '../telas/looks'
 import MainMenu from '../telas/menuPrincipal'  
 import Calendar from '../telas/calendario'
@@ -57,12 +58,13 @@ const DrawerRoutes = createDrawerNavigator({
 const StackRoutes = createStackNavigator({
 
     DrawerRoutes: { screen: DrawerRoutes },
-    Login: { screen: Login },
+    // Login: { screen: Login },
     SignIn: { screen: SignIn },
     SignUp: { screen: SignUp },
     MainMenu: { screen: MainMenu },
     Looks: { screen: Looks },
     ComporLook: { screen: ComporLook },
+    EspacoTroca: { screen: EspacoTroca },
     Calendar: { screen: Calendar },
     GuardaRoupa: { screen: GuardaRoupa },
     Camera: { screen: Camera },
