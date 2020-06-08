@@ -1,46 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 66 66">
-<defs>
-	<filter id="a" x="0" y="0" width="66" height="66" filterUnits="userSpaceOnUse"><feOffset dy="3" input="SourceAlpha"/>
-    	<feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-opacity="0.161"/><feComposite operator="in" in2="b"/>
-    	<feComposite in="SourceGraphic"/>
+  <defs>
+    <filter id="a" x="0" y="0" width="66" height="66" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="b"/>
+      <feComposite in="SourceGraphic"/>
     </filter>
     <filter id="c" x="0" y="0" width="66" height="66" filterUnits="userSpaceOnUse">
-    	<feOffset dy="3" input="SourceAlpha"/><feGaussianBlur stdDeviation="3" result="d"/>
-        <feFlood flood-opacity="0.161"/>
-        <feComposite operator="in" in2="d"/>
-        <feComposite in="SourceGraphic"/>
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="d"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="d"/>
+      <feComposite in="SourceGraphic"/>
     </filter>
-</defs>
-<g transform="translate(4 -115)"><g transform="translate(84 182) rotate(180)">
-	<g transform="matrix(-1, 0, 0, -1, 88, 67)" filter="url(#a)">
-    	<g transform="translate(57 54) rotate(180)" fill="#fff" stroke="#4e3d42" stroke-width="2">
-        	<circle cx="24" cy="24" r="24" stroke="none"/><circle cx="24" cy="24" r="23" fill="none"/>
+  </defs>
+  <g transform="translate(4 -115)">
+    <g transform="translate(84 182) rotate(180)">
+      <g transform="matrix(-1, 0, 0, -1, 88, 67)" filter="url(#a)">
+        <g transform="translate(57 54) rotate(180)" fill="#fff" stroke="#4e3d42" stroke-width="2">
+          <circle cx="24" cy="24" r="24" stroke="none"/>
+          <circle cx="24" cy="24" r="23" fill="none"/>
         </g>
-    </g>
-	<g transform="matrix(-1, 0, 0, -1, 88, 67)" filter="url(#c)">
-		<g transform="translate(57 54) rotate(180)" fill="#fff" stroke="#4e3d42" stroke-width="2">
-    		<circle cx="24" cy="24" r="24" stroke="none"/>
-            <circle cx="24" cy="24" r="23" fill="none"/>
+      </g>
+      <g transform="matrix(-1, 0, 0, -1, 88, 67)" filter="url(#c)">
+        <g transform="translate(57 54) rotate(180)" fill="#fff" stroke="#4e3d42" stroke-width="2">
+          <circle cx="24" cy="24" r="24" stroke="none"/>
+          <circle cx="24" cy="24" r="23" fill="none"/>
         </g>
+      </g>
     </g>
-</g>
-<g transform="translate(12 127)">
-  <g transform="translate(9.702)">
-    <path d="M3114.386,1684.3l7.59-1.351,7.423,1.351-7.646-7.3Z" transform="translate(-3114.386 -1673.195)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-    <path d="M3127,1674.392v-3.805h2.961v1.992" transform="translate(-3119.655 -1670.587)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+    <g transform="translate(12 127)">
+      <g transform="translate(9.702)">
+        <path d="M3114.386,1684.3l7.59-1.351,7.423,1.351-7.646-7.3Z" transform="translate(-3114.386 -1673.195)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+        <path d="M3127,1674.392v-3.805h2.961v1.992" transform="translate(-3119.655 -1670.587)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+      <g transform="translate(35.574 10.859) rotate(90)">
+        <path d="M0,7.3,7.591,5.95,15.013,7.3,7.366,0Z" transform="translate(0 3.805)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+          <path d="M0,3.805V0H2.961V1.992" transform="translate(7.345)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+      <g transform="translate(10.859 24.468)">
+        <path d="M3129.4,1677l-7.591,1.352-7.422-1.352,7.648,7.3Z" transform="translate(-3114.386 -1677)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+        <path d="M3129.961,1670.587v3.805H3127V1672.4" transform="translate(-3122.294 -1663.286)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+      <g transform="translate(0 24.715) rotate(-90)">
+        <path d="M0,7.3,7.591,5.949,15.013,7.3,7.366,0Z" transform="translate(0 3.805)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+        <path d="M0,3.805V0H2.961V1.992" transform="translate(7.345)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+      </g>
+    </g>
   </g>
-  <g transform="translate(35.574 10.859) rotate(90)">
-    <path d="M0,7.3,7.591,5.95,15.013,7.3,7.366,0Z" transform="translate(0 3.805)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-      <path d="M0,3.805V0H2.961V1.992" transform="translate(7.345)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-  </g>
-  <g transform="translate(10.859 24.468)">
-    <path d="M3129.4,1677l-7.591,1.352-7.422-1.352,7.648,7.3Z" transform="translate(-3114.386 -1677)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-      <path d="M3129.961,1670.587v3.805H3127V1672.4" transform="translate(-3122.294 -1663.286)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-  </g>
-  <g transform="translate(0 24.715) rotate(-90)">
-    <path d="M0,7.3,7.591,5.949,15.013,7.3,7.366,0Z" transform="translate(0 3.805)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-      <path d="M0,3.805V0H2.961V1.992" transform="translate(7.345)" fill="none" stroke="#4e3d42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
-  </g>
-  </g>
-</g>
 </svg>
