@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, StyleSheet, ImageBackground, TouchableOpacity, Text, FlatList, Dimensions, PermissionsAndroid } from 'react-native'
+import { View, StyleSheet, ImageBackground, TouchableOpacity, Text, FlatList, Dimensions, PermissionsAndroid, Alert } from 'react-native'
 import AsyncStorage from '@react-native-community/async-storage'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
@@ -35,6 +35,7 @@ const buttonsList = [{
 
 export default function MainMenu ({ navigation }) {
     const [dayPhrase, setDayPhrase] = useState('')
+    const [tomorrowWeather, setTomorrowWeather] = useState(false)
 
     async function getTokenFromStorage() {
         const token = await AsyncStorage.getItem('@Baloo:token');
@@ -78,21 +79,33 @@ export default function MainMenu ({ navigation }) {
         )
     }
 
-    
-    return(
+    return (
         <View style={styles.container}>
             <View style={styles.dayStatus}>
                 <View style={styles.weather}>
-                    <Text style={styles.text}>HOJE</Text>
-                    <Weather setDayPhrase={setDayPhrase} />
+                    <TouchableOpacity style={styles.centerThings} onPress={() => setTomorrowWeather(false)}>
+                        {
+                            tomorrowWeather && <MaterialCommunityIcons
+                                size={20}
+                                name="arrow-left"
+                                color="#4E3D42"
+                            />
+                        }
+                        <Text style={styles.text}>HOJE</Text>
+                    </TouchableOpacity>
+                    {tomorrowWeather ? (<Weather setDayPhrase={setDayPhrase} tomorrowWeather />) : (<Weather setDayPhrase={setDayPhrase} />)}
                 </View>
-                <View style={styles.tomorrowWeather}>
-                    <Text style={{ ...styles.text, color: '#d4a1c1' }}>AMANHÃ</Text>
-                    <MaterialCommunityIcons
-                        size={20}
-                        name="arrow-right"
-                        color="#d4a1c1"
-                    />
+                <View style={styles.centerThings}>
+                    <TouchableOpacity style={styles.centerThings} onPress={() => setTomorrowWeather(true)}>
+                        <Text style={{ ...styles.text, color: '#d4a1c1' }}>AMANHÃ</Text>
+                        {
+                            !tomorrowWeather && <MaterialCommunityIcons
+                                size={20}
+                                name="arrow-right"
+                                color="#d4a1c1"
+                            />
+                        }
+                    </TouchableOpacity>
                 </View>
             </View>
 
@@ -105,7 +118,6 @@ export default function MainMenu ({ navigation }) {
             </View>
             
             <View style={styles.options}>
-                {/* O ícone do botão espaço troca está diferente dos outros. Não mexi porque não vale a pena estilizar apenas um */}
                 <FlatList
                     data={buttonsList}
                     renderItem={buttonItem}
@@ -184,9 +196,11 @@ const styles = StyleSheet.create({
     },
     weather: {
         flexDirection: 'row',
-        paddingBottom: 5
+        paddingBottom: 5,
+        display: 'flex',
+        alignItems: 'center'
     },
-    tomorrowWeather: {
+    centerThings: {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
